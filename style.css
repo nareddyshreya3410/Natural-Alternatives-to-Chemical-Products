@@ -1,0 +1,406 @@
+:root{
+    --main-color:#008000;
+    --black:#244361;
+    --box-shadow:0 5px 10px rgba(0,0,0,.1);
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    scroll-padding-top: 60px;
+}
+
+section{
+    padding:20px 0;
+}
+
+section:nth-child(odd){
+    background: #f8f8fe;
+}
+
+.heading{
+    text-align: center;
+    padding:0 15px;
+    padding-bottom: 5px;
+    color:var(--black);
+    font-size: 30px;
+}
+
+.heading span{
+    color:var(--main-color);
+}
+
+.link-btn{
+    display: inline-block;
+    background:var(--main-color);
+    color:#fff;
+    border-radius: 50px;
+    padding:5px 25px;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+
+.link-btn:hover{
+    color:#fff;
+    background:var(--black);
+}
+
+header{
+    box-shadow: var(--box-shadow);
+    background: #fff;
+}
+
+header .logo{
+    font-size: 20px;
+    color:var(--black);
+}
+
+header .logo span{
+    color:var(--main-color);
+}
+
+header .nav a{
+    margin-left: 3px;
+    border-radius: 50px;
+    color:var(--black);
+    padding:5px 15px;
+}
+
+header .nav a.active,
+header .nav a:hover{
+    background: var(--main-color);
+    box-shadow: var(--box-shadow);
+    color:#fff;
+}
+
+#menu-bar{
+    color:var(--black);
+    cursor: pointer;
+    font-size: 25px;
+    transition: .2s linear;
+}
+
+.home{
+    min-height: 100vh;
+    background: url(../images/home-bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+	background-color:#fff;
+}
+.home .outerbox{
+	width:800px;
+	overflow: hidden;
+}
+.home .outerbox .sliderbox{
+	
+	position:relative;
+	width:3200px;
+	animation: slide 12s infinite;
+
+}
+.home .outerbox .sliderbox img{
+	float: left;
+
+}
+@keyframes slide
+{
+	0%
+	{
+		left: 0px;
+	}
+	20%
+	{
+		left: 0px;
+	}
+	25%
+	{
+		left: -800px;
+	}
+	45%
+	{
+		left: -800px;
+	}
+	50%
+	{
+		left: -1600px;
+	}
+	70%
+	{
+		left: -1600px;
+	}
+	75%
+	{
+		left: -2400px;
+	}
+	95%
+	{
+		left: -2400px;
+	}
+	100%
+	{
+		left: -3200px;
+	}
+}
+.covid_care .box{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background:#fff;
+}
+
+.covid_care .box .image{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background:#f8f8fe;
+}
+
+.covid_care .box .image img{
+    transition: .2s linear;
+}
+
+.covid_care .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.covid_care .box .content h3{
+    padding:5px 0;
+    font-size: 20px;
+    color:var(--black);
+}
+
+.skin_care .box{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background:#fff;
+}
+
+.skin_care .box .image{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background:#f8f8fe;
+}
+
+.skin_care .box .image img{
+    transition: .2s linear;
+}
+
+.skin_care .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.skin_care .box .content h3{
+    padding:5px 0;
+    font-size: 20px;
+    color:var(--black);
+}
+
+.hair_care .box{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background:#fff;
+}
+
+.hair_care .box .image{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background:#f8f8fe;
+}
+
+.hair_care .box .image img{
+    transition: .2s linear;
+}
+
+.hair_care .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.hair_care .box .content h3{
+    padding:5px 0;
+    font-size: 20px;
+    color:var(--black);
+}
+.organic_fertilizers .box{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background:#fff;
+}
+
+.organic_fertilizers .box .image{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background:#f8f8fe;
+}
+
+.organic_fertilizers .box .image img{
+    transition: .2s linear;
+}
+
+.organic_fertilizers .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.organic_fertilizers .box .content h3{
+    padding:5px 0;
+    font-size: 20px;
+    color:var(--black);
+}
+
+.blogs .box{
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    background:#fff;
+}
+
+.blogs .box .image{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background:#f8f8fe;
+}
+
+.blogs .box .image img{
+    transition: .2s linear;
+}
+
+.blogs .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.blogs .box .content h3{
+    padding:5px 0;
+    font-size: 20px;
+    color:var(--black);
+}
+
+.blogs .box .content .icons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.blogs .box .content .icons a{
+    color:#777;
+    font-size: 13px;
+}
+
+.blogs .box .content .icons a i{
+    padding-right: 7px;
+}
+
+
+.blogs .box .content .icons a:hover{
+    color:var(--main-color);
+}
+
+.footer .box{
+    flex:1 1 250px;
+}
+
+.footer .box h3{
+    font-size: 20px;
+    color:var(--black);
+}
+
+.footer .box a{
+    display: block;
+    font-size: 14px;
+    color:#777;
+    padding:5px 0;
+}
+
+.footer .box a:hover{
+    color:var(--main-color);
+}
+
+.footer .credit{
+    text-align: center;
+    color:var(--black);
+    border-top: 1px solid rgba(0,0,0,.1);
+    margin-top: 10px;
+    padding-top: 20px;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:991px){
+
+    .home .content h3{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .nav{
+        position: absolute;
+        top:100%; left: 0; right: 0;
+        background: #fff;
+        border-top: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.1);
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .nav a{
+        display: block;
+        width: 100%;
+        margin:10px;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+}
+
+
+
+
